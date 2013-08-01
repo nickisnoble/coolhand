@@ -57,3 +57,112 @@ a img {
 /* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
+
+@font-face {
+  font-family: 'colors-of-autumn';
+  src: url("../fonts/colors_of_autumn-webfont.eot");
+  src: url("../fonts/colors_of_autumn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/colors_of_autumn-webfont.woff") format("woff"), url("../fonts/colors_of_autumn-webfont.ttf") format("truetype"), url("../fonts/colors_of_autumn-webfont.svg#colors_of_autumnregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 61, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.25em; }
+
+/* line 35, ../scss/screen.scss */
+html, body {
+  font-family: "brandon-grotesque", helvetica, sans-serif;
+  height: 100%; }
+
+/* line 39, ../scss/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-transform: uppercase; }
+
+/* line 43, ../scss/screen.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px dotted #471c7b; }
+  /* line 18, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: #999999; }
+  /* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: #666666; }
+  /* line 27, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: black; }
+  /* line 47, ../scss/screen.scss */
+  a:hover {
+    border-bottom: 2px solid #471c7b; }
+
+/* line 51, ../scss/screen.scss */
+.crazy {
+  font-family: "colors-of-autumn", "brandon-grotesque", helvetica, sans-serif; }
+
+/* line 55, ../scss/screen.scss */
+article, .cover {
+  padding: 86px; }
+
+/* line 58, ../scss/screen.scss */
+.cover {
+  font-size: 4.5em;
+  line-height: 1.11111em;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 67, ../scss/screen.scss */
+section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #1abc9c; }
+
+/* line 73, ../scss/screen.scss */
+.between {
+  background: black url(../img/bg.jpg) no-repeat top center fixed;
+  height: 100px; }
+
+/* line 78, ../scss/screen.scss */
+#events {
+  background: #c0ffee; }
+
+/* line 81, ../scss/screen.scss */
+#mixes {
+  background: #bada55; }
+
+/* line 85, ../scss/screen.scss */
+#home .cover {
+  background: black url(../img/bg.jpg) no-repeat top center fixed;
+  height: 60%; }
+/* line 89, ../scss/screen.scss */
+#home nav {
+  font-size: 4.5em;
+  line-height: 1.11111em;
+  background: white;
+  height: 20%; }
+  /* line 93, ../scss/screen.scss */
+  #home nav ul {
+    list-style: none; }
+    /* line 95, ../scss/screen.scss */
+    #home nav ul li {
+      display: inline-block;
+      text-align: center;
+      min-width: 30%;
+      height: 100%; }
+      /* line 100, ../scss/screen.scss */
+      #home nav ul li a {
+        color: black;
+        border: none; }
+        /* line 103, ../scss/screen.scss */
+        #home nav ul li a:hover {
+          border-bottom: 3px dotted #471c7b; }

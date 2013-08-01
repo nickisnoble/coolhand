@@ -3,4 +3,108 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+
+@import "compass";
 @import "compass/reset";
+@font-face {
+    font-family: 'colors-of-autumn';
+    src: url('../fonts/colors_of_autumn-webfont.eot');
+    src: url('../fonts/colors_of_autumn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/colors_of_autumn-webfont.woff') format('woff'),
+         url('../fonts/colors_of_autumn-webfont.ttf') format('truetype'),
+         url('../fonts/colors_of_autumn-webfont.svg#colors_of_autumnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// =Settings
+	//color
+	$highlight:#471C7B;
+	$white:#fff;
+	$black:#000;
+
+	//type
+	$base-font-size: 16px;
+	$base-line-height: 20px;
+	$font-family:"brandon-grotesque", helvetica, sans-serif;
+
+
+// =includes
+	@include establish-baseline($base-font-size);
+
+// Basic =Type
+html, body{
+	font-family: $font-family;
+	height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+a{
+	@include link-colors(#333,#666,#000,#999);
+	text-decoration:none;
+	border-bottom: 1px dotted $highlight;
+	&:hover{
+		border-bottom: 2px solid $highlight;
+	}
+}
+.crazy{
+	font-family: 'colors-of-autumn', $font-family;
+}
+// =Bits
+	article, .cover{
+		padding: 86px;
+	}
+	.cover{
+		@include adjust-font-size-to(72px);
+		color: $white;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	}
+// =Sections
+	section{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		background: #1abc9c;
+	}
+	.between{
+		background: #000 url(../img/bg.jpg) no-repeat top center fixed;
+		height: 100px;
+	}
+// =Specifics
+#events{
+	background: #c0ffee;
+}
+#mixes{
+	background: #bada55;
+}
+#home{
+	.cover{
+		background: #000 url(../img/bg.jpg) no-repeat top center fixed;
+		height: 60%;
+	}
+	nav{
+		@include adjust-font-size-to(72px);
+		background: $white;
+		height: 20%;
+		ul{
+			list-style: none;
+			li{
+				display: inline-block;
+				text-align: center;
+				min-width: 30%;
+				height: 100%;
+				a{
+					color: $black;
+					border:none;
+					&:hover{
+						border-bottom: 3px dotted $highlight;
+					}
+				}
+			}
+		}
+	}
+}
