@@ -1,1 +1,1 @@
-var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName("body")[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;$("section").css("height",y).css("width",x);
+$(window).resize(function(){var e=window,t=document,n=t.documentElement,r=t.getElementsByTagName("body")[0],i=e.innerHeight||n.clientHeight||r.clientHeight;$("section").css("height",i)});

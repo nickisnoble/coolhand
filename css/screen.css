@@ -67,102 +67,154 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 61, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
-  font-size: 100%; }
+  font-size: 200%; }
 
 /* line 64, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
-  font-size: 16px;
-  line-height: 1.25em; }
+  font-size: 32px;
+  line-height: 1.5em; }
 
-/* line 35, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
 html, body {
   font-family: "brandon-grotesque", helvetica, sans-serif;
-  height: 100%; }
+  height: 100%;
+  color: white; }
 
 /* line 39, ../scss/screen.scss */
 h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
   font-weight: 900;
-  text-transform: uppercase; }
+  line-height: 1.5em; }
 
-/* line 43, ../scss/screen.scss */
+/* line 44, ../scss/screen.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 45, ../scss/screen.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0; }
+
+/* line 46, ../scss/screen.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 0.83em 0; }
+
+/* line 47, ../scss/screen.scss */
+h5 {
+  font-size: .83em;
+  margin: 1.5em 0; }
+
+/* line 48, ../scss/screen.scss */
+h6 {
+  font-size: .75em;
+  margin: 1.67em 0; }
+
+/* line 50, ../scss/screen.scss */
 a {
-  color: #333333;
+  color: #dddddd;
   text-decoration: none;
-  border-bottom: 1px dotted #471c7b; }
+  border-bottom: 1px dotted #471c7b;
+  -webkit-transition: all, 500ms;
+  -moz-transition: all, 500ms;
+  -o-transition: all, 500ms;
+  transition: all, 500ms; }
   /* line 18, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #999999; }
   /* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: #666666; }
+    color: #660099; }
   /* line 27, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: black; }
-  /* line 47, ../scss/screen.scss */
+  /* line 55, ../scss/screen.scss */
   a:hover {
     border-bottom: 2px solid #471c7b; }
 
-/* line 51, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
+.remove-bottom {
+  margin-bottom: 0; }
+
+/* line 62, ../scss/screen.scss */
+.remove-top {
+  margin-top: 0; }
+
+/* line 65, ../scss/screen.scss */
 .crazy {
   font-family: "colors-of-autumn", "brandon-grotesque", helvetica, sans-serif; }
 
-/* line 55, ../scss/screen.scss */
+/* line 69, ../scss/screen.scss */
 article, .cover {
   padding: 86px; }
 
-/* line 58, ../scss/screen.scss */
+/* line 72, ../scss/screen.scss */
 .cover {
-  font-size: 4.5em;
-  line-height: 1.11111em;
   color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 67, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 section {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background: #1abc9c; }
+  border-bottom: 5px solid white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-/* line 73, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 .between {
   background: black url(../img/bg.jpg) no-repeat top center fixed;
   height: 100px; }
 
-/* line 78, ../scss/screen.scss */
+/* line 95, ../scss/screen.scss */
+#home {
+  border: none; }
+  /* line 97, ../scss/screen.scss */
+  #home .cover {
+    background: black url(../img/bg.jpg) no-repeat top center fixed;
+    height: 65%; }
+  /* line 101, ../scss/screen.scss */
+  #home nav {
+    font-size: 1.5em;
+    line-height: 2em;
+    background: white;
+    color: black;
+    width: 100%; }
+    /* line 106, ../scss/screen.scss */
+    #home nav h2 {
+      margin: 0; }
+    /* line 109, ../scss/screen.scss */
+    #home nav ul {
+      list-style: none; }
+      /* line 111, ../scss/screen.scss */
+      #home nav ul li {
+        display: inline-block;
+        text-align: center;
+        min-width: 30%;
+        height: 100%; }
+        /* line 116, ../scss/screen.scss */
+        #home nav ul li a {
+          color: black;
+          border: none; }
+          /* line 119, ../scss/screen.scss */
+          #home nav ul li a:hover {
+            border-bottom: 3px dotted #471c7b; }
+
+/* line 127, ../scss/screen.scss */
 #events {
-  background: #c0ffee; }
+  background: black url(../img/event.jpg) no-repeat top center fixed; }
 
-/* line 81, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
 #mixes {
-  background: #bada55; }
+  background: black url(../img/mix.jpg) no-repeat top center fixed; }
 
-/* line 85, ../scss/screen.scss */
-#home .cover {
-  background: black url(../img/bg.jpg) no-repeat top center fixed;
-  height: 60%; }
-/* line 89, ../scss/screen.scss */
-#home nav {
-  font-size: 4.5em;
-  line-height: 1.11111em;
-  background: white;
-  height: 20%; }
-  /* line 93, ../scss/screen.scss */
-  #home nav ul {
-    list-style: none; }
-    /* line 95, ../scss/screen.scss */
-    #home nav ul li {
-      display: inline-block;
-      text-align: center;
-      min-width: 30%;
-      height: 100%; }
-      /* line 100, ../scss/screen.scss */
-      #home nav ul li a {
-        color: black;
-        border: none; }
-        /* line 103, ../scss/screen.scss */
-        #home nav ul li a:hover {
-          border-bottom: 3px dotted #471c7b; }
+/* line 133, ../scss/screen.scss */
+#booking {
+  background: black url(../img/contact.jpg) no-repeat top center fixed; }

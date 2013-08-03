@@ -23,10 +23,9 @@
 	$black:#000;
 
 	//type
-	$base-font-size: 16px;
-	$base-line-height: 20px;
+	$base-font-size: 32px;
+	$base-line-height: 48px;
 	$font-family:"brandon-grotesque", helvetica, sans-serif;
-
 
 // =includes
 	@include establish-baseline($base-font-size);
@@ -35,18 +34,33 @@
 html, body{
 	font-family: $font-family;
 	height: 100%;
+	color: $white;
 }
 h1,h2,h3,h4,h5,h6{
-	font-weight: 900;
 	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1.5em;
 }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+
 a{
-	@include link-colors(#333,#666,#000,#999);
+	@include link-colors(#ddd,#609,#000,#999);
 	text-decoration:none;
 	border-bottom: 1px dotted $highlight;
+	@include transition(all, 500ms); 
 	&:hover{
 		border-bottom: 2px solid $highlight;
 	}
+}
+.remove-bottom{
+	margin-bottom: 0;
+}
+.remove-top{
+	margin-top: 0;
 }
 .crazy{
 	font-family: 'colors-of-autumn', $font-family;
@@ -56,7 +70,6 @@ a{
 		padding: 86px;
 	}
 	.cover{
-		@include adjust-font-size-to(72px);
 		color: $white;
 		-webkit-background-size: cover;
 		   -moz-background-size: cover;
@@ -68,28 +81,31 @@ a{
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #1abc9c;
+		border-bottom: 5px solid $white;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
 	}
 	.between{
 		background: #000 url(../img/bg.jpg) no-repeat top center fixed;
 		height: 100px;
 	}
 // =Specifics
-#events{
-	background: #c0ffee;
-}
-#mixes{
-	background: #bada55;
-}
 #home{
+	border: none;
 	.cover{
 		background: #000 url(../img/bg.jpg) no-repeat top center fixed;
-		height: 60%;
+		height: 65%;
 	}
 	nav{
-		@include adjust-font-size-to(72px);
+		@include adjust-font-size-to(48px);
 		background: $white;
-		height: 20%;
+		color: $black;
+		width: 100%;
+		h2{
+			margin: 0;
+		}
 		ul{
 			list-style: none;
 			li{
@@ -107,4 +123,13 @@ a{
 			}
 		}
 	}
+}
+#events{
+	background: #000 url(../img/event.jpg) no-repeat top center fixed;
+}
+#mixes{
+	background: #000 url(../img/mix.jpg) no-repeat top center fixed;
+}
+#booking{
+	background: #000 url(../img/contact.jpg) no-repeat top center fixed;
 }
