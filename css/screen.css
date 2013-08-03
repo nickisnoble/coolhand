@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,38 +23,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -65,11 +65,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal; }
 
-/* line 61, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 200%; }
 
-/* line 64, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 32px;
   line-height: 1.5em; }
@@ -115,23 +115,23 @@ h6 {
 a {
   color: #dddddd;
   text-decoration: none;
-  border-bottom: 1px dotted #471c7b;
+  border-bottom: 1px dotted #660099;
   -webkit-transition: all, 500ms;
   -moz-transition: all, 500ms;
   -o-transition: all, 500ms;
   transition: all, 500ms; }
-  /* line 18, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 18, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #999999; }
-  /* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #660099; }
-  /* line 27, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 27, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: black; }
   /* line 55, ../scss/screen.scss */
   a:hover {
-    border-bottom: 2px solid #471c7b; }
+    border-bottom: 2px solid #660099; }
 
 /* line 59, ../scss/screen.scss */
 .remove-bottom {
@@ -159,6 +159,7 @@ article, .cover {
 
 /* line 80, ../scss/screen.scss */
 section {
+  background: black;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -168,53 +169,57 @@ section {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 90, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 .between {
   background: black url(../img/bg.jpg) no-repeat top center fixed;
-  height: 100px; }
+  height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-/* line 95, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 #home {
   border: none; }
-  /* line 97, ../scss/screen.scss */
+  /* line 102, ../scss/screen.scss */
   #home .cover {
     background: black url(../img/bg.jpg) no-repeat top center fixed;
     height: 65%; }
-  /* line 101, ../scss/screen.scss */
+  /* line 106, ../scss/screen.scss */
   #home nav {
     font-size: 1.5em;
     line-height: 2em;
     background: white;
     color: black;
     width: 100%; }
-    /* line 106, ../scss/screen.scss */
+    /* line 111, ../scss/screen.scss */
     #home nav h2 {
       margin: 0; }
-    /* line 109, ../scss/screen.scss */
+    /* line 114, ../scss/screen.scss */
     #home nav ul {
       list-style: none; }
-      /* line 111, ../scss/screen.scss */
+      /* line 116, ../scss/screen.scss */
       #home nav ul li {
         display: inline-block;
         text-align: center;
         min-width: 30%;
         height: 100%; }
-        /* line 116, ../scss/screen.scss */
+        /* line 121, ../scss/screen.scss */
         #home nav ul li a {
           color: black;
           border: none; }
-          /* line 119, ../scss/screen.scss */
+          /* line 124, ../scss/screen.scss */
           #home nav ul li a:hover {
-            border-bottom: 3px dotted #471c7b; }
+            border-bottom: 3px dotted #660099; }
 
-/* line 127, ../scss/screen.scss */
+/* line 132, ../scss/screen.scss */
 #events {
   background: black url(../img/event.jpg) no-repeat top center fixed; }
 
-/* line 130, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 #mixes {
-  background: black url(../img/mix.jpg) no-repeat top center fixed; }
+  background: black url(../img/mix.jpg) no-repeat bottom center fixed; }
 
-/* line 133, ../scss/screen.scss */
-#booking {
-  background: black url(../img/contact.jpg) no-repeat top center fixed; }
+/* line 138, ../scss/screen.scss */
+#contact {
+  background: black url(../img/contact.jpg) no-repeat bottom center fixed; }

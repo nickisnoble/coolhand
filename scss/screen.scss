@@ -18,7 +18,7 @@
 }
 // =Settings
 	//color
-	$highlight:#471C7B;
+	$highlight:#609;
 	$white:#fff;
 	$black:#000;
 
@@ -41,14 +41,14 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 900;
 	line-height: 1.5em;
 }
-h1              { font-size: 2em; margin: .67em 0 }
-h2              { font-size: 1.5em; margin: .75em 0 }
-h3              { font-size: 1.17em; margin: .83em 0 }
-h5              { font-size: .83em; margin: 1.5em 0 }
-h6              { font-size: .75em; margin: 1.67em 0 }
+h1 { font-size: 2em; margin: .67em 0 }
+h2 { font-size: 1.5em; margin: .75em 0 }
+h3 { font-size: 1.17em; margin: .83em 0 }
+h5 { font-size: .83em; margin: 1.5em 0 }
+h6 { font-size: .75em; margin: 1.67em 0 }
 
 a{
-	@include link-colors(#ddd,#609,#000,#999);
+	@include link-colors(#ddd,$highlight,#000,#999);
 	text-decoration:none;
 	border-bottom: 1px dotted $highlight;
 	@include transition(all, 500ms); 
@@ -78,6 +78,7 @@ a{
 	}
 // =Sections
 	section{
+		background: $black;
 		position: relative;
 		overflow: hidden;
 		width: 100%;
@@ -89,7 +90,11 @@ a{
 	}
 	.between{
 		background: #000 url(../img/bg.jpg) no-repeat top center fixed;
-		height: 100px;
+		height: 300px;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
 	}
 // =Specifics
 #home{
@@ -128,8 +133,8 @@ a{
 	background: #000 url(../img/event.jpg) no-repeat top center fixed;
 }
 #mixes{
-	background: #000 url(../img/mix.jpg) no-repeat top center fixed;
+	background: #000 url(../img/mix.jpg) no-repeat bottom center fixed;
 }
-#booking{
-	background: #000 url(../img/contact.jpg) no-repeat top center fixed;
+#contact{
+	background: #000 url(../img/contact.jpg) no-repeat bottom center fixed;
 }
